@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1200" role="img" aria-labelledby="title desc">
+  <title id="title">Gallery 4</title>
+  <desc id="desc">A warm room and dusty stage lights.</desc>
+  <defs>
+    <linearGradient id="g4" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#121212"/>
+      <stop offset="50%" stop-color="#231515"/>
+      <stop offset="100%" stop-color="#080808"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="1200" fill="url(#g4)"/>
+  <rect x="100" y="180" width="700" height="700" fill="#0d0d0d" stroke="#333"/>
+  <rect x="150" y="220" width="600" height="620" fill="#151515" opacity="0.8"/>
+  <circle cx="450" cy="420" r="180" fill="#8a4b32" opacity="0.3"/>
+  <rect x="220" y="680" width="460" height="80" fill="#8b1e24" opacity="0.35"/>
+  <path d="M0 980 L900 980" stroke="#1a1a1a" stroke-width="14"/>
+  <path d="M300 980 L520 1200" stroke="#191919" stroke-width="40"/>
+  <path d="M520 980 L700 1200" stroke="#1a1a1a" stroke-width="36"/>
+</svg>

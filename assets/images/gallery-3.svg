@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1200" role="img" aria-labelledby="title desc">
+  <title id="title">Gallery 3</title>
+  <desc id="desc">Urban night and headlights.</desc>
+  <defs>
+    <linearGradient id="g3" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#0f0f10"/>
+      <stop offset="30%" stop-color="#241314"/>
+      <stop offset="100%" stop-color="#090909"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="1200" fill="url(#g3)"/>
+  <g opacity="0.8">
+    <circle cx="170" cy="260" r="160" fill="#8a4b32" opacity="0.34"/>
+    <circle cx="660" cy="300" r="220" fill="#8b1e24" opacity="0.18"/>
+  </g>
+  <path d="M0 720 L900 720" stroke="#181818" stroke-width="18"/>
+  <path d="M0 840 L900 840" stroke="#171717" stroke-width="12"/>
+  <path d="M120 720 L320 1200" stroke="#1c1c1c" stroke-width="32"/>
+  <path d="M430 720 L600 1200" stroke="#1f1f1f" stroke-width="38"/>
+  <path d="M630 720 L820 1200" stroke="#1b1b1b" stroke-width="29"/>
+  <g fill="#f2dcc8" opacity="0.6">
+    <circle cx="620" cy="220" r="4"/>
+    <circle cx="700" cy="270" r="5"/>
+    <circle cx="770" cy="330" r="5"/>
+    <circle cx="830" cy="390" r="6"/>
+  </g>
+</svg>
