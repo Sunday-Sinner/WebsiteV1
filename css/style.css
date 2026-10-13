@@ -3088,3 +3088,1337 @@ p {
     width: 100%;
   }
 }
+
+.song-story-feature {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse at 92% 50%, rgba(139, 30, 36, 0.16), transparent 30%),
+    linear-gradient(110deg, #111 0%, #0b0b0b 68%);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.song-story-feature__inner {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(260px, 0.9fr);
+  align-items: center;
+  gap: 2rem;
+  min-height: 15rem;
+}
+
+.song-story-feature h2 {
+  max-width: 34rem;
+  font-size: clamp(2.4rem, 5vw, 4.4rem);
+}
+
+.song-story-feature__copy {
+  display: grid;
+  justify-items: start;
+  gap: 1.2rem;
+  max-width: 28rem;
+}
+
+.song-story-feature__copy p {
+  font-size: 1rem;
+}
+
+.song-story-feature__mark {
+  position: absolute;
+  right: -0.5rem;
+  bottom: -3rem;
+  color: rgba(216, 210, 196, 0.035);
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(12rem, 28vw, 22rem);
+  font-weight: 700;
+  line-height: 1;
+  pointer-events: none;
+}
+
+.sins-hero {
+  position: relative;
+  display: grid;
+  align-items: center;
+  min-height: min(48rem, calc(100vh - 76px));
+  overflow: hidden;
+  isolation: isolate;
+  border-bottom: 1px solid var(--line);
+  background:
+    radial-gradient(ellipse at 80% 80%, rgba(139, 30, 36, 0.18), transparent 32%),
+    linear-gradient(118deg, #080808 0%, #151211 55%, #090909 100%);
+}
+
+.sins-hero::before,
+.sins-hero::after {
+  position: absolute;
+  z-index: -1;
+  content: "";
+  pointer-events: none;
+}
+
+.sins-hero::before {
+  inset: 0;
+  opacity: 0.6;
+  background: repeating-linear-gradient(
+    90deg,
+    transparent 0,
+    transparent 4.4rem,
+    rgba(216, 210, 196, 0.035) 4.45rem,
+    transparent 4.5rem
+  );
+}
+
+.sins-hero::after {
+  inset: auto 0 0;
+  height: 34%;
+  background: linear-gradient(0deg, rgba(11, 11, 11, 0.95), transparent);
+}
+
+.sins-hero__inner {
+  position: relative;
+  z-index: 2;
+  padding-top: 5.5rem;
+  padding-bottom: 6rem;
+}
+
+.sins-hero h1 {
+  max-width: 900px;
+  font-size: clamp(3.3rem, 8.6vw, 7.4rem);
+  line-height: 0.87;
+  letter-spacing: 0.02em;
+}
+
+.sins-hero h1 span {
+  color: #b8afa2;
+  font-size: 0.62em;
+}
+
+.sins-hero__subtitle {
+  max-width: 650px;
+  margin-top: 1.7rem;
+  color: var(--dirty-white);
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(1.45rem, 3vw, 2.3rem);
+  font-style: italic;
+  line-height: 1.2;
+}
+
+.sins-hero__intro {
+  max-width: 620px;
+  margin-top: 1.35rem;
+  font-size: 0.98rem;
+}
+
+.sins-hero__link {
+  margin-top: 1.7rem;
+}
+
+.sins-hero__road {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  right: 0;
+  width: min(55%, 700px);
+  height: 100%;
+  overflow: hidden;
+  opacity: 0.8;
+  pointer-events: none;
+}
+
+.sins-hero__road::before {
+  position: absolute;
+  right: 12%;
+  bottom: -18%;
+  width: 78%;
+  height: 77%;
+  content: "";
+  transform: perspective(28rem) rotateX(57deg) rotateZ(-9deg);
+  transform-origin: bottom center;
+  background:
+    linear-gradient(90deg, transparent 49.5%, rgba(216, 210, 196, 0.16) 49.8%, rgba(216, 210, 196, 0.16) 50.2%, transparent 50.5%),
+    linear-gradient(180deg, transparent, rgba(139, 30, 36, 0.11));
+  border: 1px solid rgba(216, 210, 196, 0.08);
+  box-shadow: 0 0 80px rgba(139, 30, 36, 0.1);
+}
+
+.sins-hero__road-line {
+  position: absolute;
+  right: 51%;
+  bottom: 0;
+  width: 1px;
+  height: 55%;
+  transform: rotate(-8deg);
+  transform-origin: bottom center;
+  background: linear-gradient(0deg, rgba(216, 210, 196, 0.5), rgba(216, 210, 196, 0));
+}
+
+.sins-hero__fracture {
+  position: absolute;
+  top: 13%;
+  right: 27%;
+  width: 1px;
+  height: 57%;
+  transform: rotate(22deg);
+  background: linear-gradient(180deg, transparent, rgba(216, 210, 196, 0.13) 25%, rgba(216, 210, 196, 0.68) 52%, rgba(139, 30, 36, 0.65) 76%, transparent);
+  box-shadow: 0 0 16px rgba(216, 210, 196, 0.2), 0 0 42px rgba(139, 30, 36, 0.25);
+}
+
+.sins-hero__horizon {
+  position: absolute;
+  top: 42%;
+  right: 8%;
+  width: 50%;
+  height: 1px;
+  transform: rotate(-13deg);
+  background: linear-gradient(90deg, transparent, rgba(216, 210, 196, 0.18), transparent);
+}
+
+.sins-chapters {
+  position: sticky;
+  top: 76px;
+  z-index: 20;
+  border-bottom: 1px solid var(--line);
+  background: rgba(11, 11, 11, 0.94);
+  backdrop-filter: blur(16px);
+}
+
+.sins-chapters__inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(0.8rem, 2vw, 1.8rem);
+  min-height: 3.8rem;
+}
+
+.sins-chapters__label,
+.sins-chapters a {
+  flex: 0 0 auto;
+  font-size: 0.64rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.sins-chapters__label {
+  color: var(--blood-red);
+  font-weight: 700;
+}
+
+.sins-chapters a {
+  color: var(--text-soft);
+  transition: color 180ms ease;
+}
+
+.sins-chapters a:hover,
+.sins-chapters a:focus-visible {
+  color: var(--dirty-white);
+}
+
+.sins-section,
+.sins-understanding,
+.sins-cycle-section,
+.sins-about {
+  scroll-margin-top: 7rem;
+}
+
+.sins-story-grid {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.7fr) minmax(0, 1.3fr);
+  gap: clamp(2.5rem, 8vw, 8rem);
+  align-items: start;
+}
+
+.sins-section__heading {
+  position: sticky;
+  top: 9rem;
+}
+
+.sins-section__heading h2,
+.sins-understanding__copy h2,
+.sins-about__heading h2 {
+  font-size: clamp(2.5rem, 5vw, 4.2rem);
+}
+
+.sins-section__rule {
+  display: block;
+  width: 4rem;
+  height: 1px;
+  margin-top: 1.6rem;
+  background: linear-gradient(90deg, var(--blood-red), transparent);
+}
+
+.sins-prose {
+  max-width: 680px;
+}
+
+.sins-prose > p + p,
+.sins-understanding__copy > p + p {
+  margin-top: 1.35rem;
+}
+
+.sins-lead {
+  color: var(--dirty-white);
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(1.55rem, 2.4vw, 2.1rem);
+  line-height: 1.2;
+}
+
+.sins-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  margin-top: 2rem;
+  padding: 1.25rem 1.4rem;
+  border-left: 2px solid var(--blood-red);
+  background: linear-gradient(90deg, rgba(139, 30, 36, 0.12), transparent);
+}
+
+.sins-note__mark {
+  color: var(--blood-red);
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 3.5rem;
+  line-height: 0.8;
+}
+
+.sins-note p {
+  color: var(--dirty-white);
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 1.4rem;
+  font-style: italic;
+}
+
+.sins-lyrics-section .section-header {
+  max-width: 760px;
+  margin: 0 auto 3rem;
+}
+
+.sins-section__dek {
+  margin-top: 1rem;
+}
+
+.sins-lyric-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.sins-lyric-card {
+  position: relative;
+  min-height: 17rem;
+  padding: clamp(1.5rem, 4vw, 2.5rem);
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background:
+    radial-gradient(ellipse at 90% 10%, rgba(139, 30, 36, 0.1), transparent 45%),
+    rgba(10, 10, 10, 0.74);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.18);
+  transition: border-color 220ms ease, transform 220ms ease;
+}
+
+.sins-lyric-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(139, 30, 36, 0.52);
+}
+
+.sins-lyric-card__index {
+  display: block;
+  margin-bottom: 1.5rem;
+  color: var(--blood-red);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+}
+
+.sins-lyric-card blockquote {
+  margin: 0;
+  color: var(--dirty-white);
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(1.6rem, 3vw, 2.4rem);
+  font-weight: 600;
+  line-height: 1.12;
+}
+
+.sins-lyric-card > p {
+  max-width: 42rem;
+  margin-top: 1.25rem;
+  font-size: 0.92rem;
+}
+
+.sins-lyric-card--wide {
+  grid-column: 1 / -1;
+  min-height: 0;
+  padding-right: 3rem;
+}
+
+.sins-lyrics-note {
+  margin-top: 1.25rem;
+  text-align: center;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.sins-understanding {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse at 18% 50%, rgba(139, 30, 36, 0.12), transparent 28%),
+    #0b0b0b;
+}
+
+.sins-understanding__layout {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.8fr) minmax(0, 1.2fr);
+  align-items: center;
+  gap: clamp(3rem, 10vw, 9rem);
+}
+
+.sins-understanding__visual {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: min(100%, 350px);
+  aspect-ratio: 1;
+  margin: auto;
+}
+
+.sins-understanding__ring {
+  position: absolute;
+  display: block;
+  aspect-ratio: 1;
+  border: 1px solid rgba(216, 210, 196, 0.16);
+  border-radius: 50%;
+}
+
+.sins-understanding__ring--outer {
+  inset: 5%;
+  box-shadow: 0 0 90px rgba(139, 30, 36, 0.1), inset 0 0 70px rgba(139, 30, 36, 0.08);
+}
+
+.sins-understanding__ring--inner {
+  inset: 20%;
+  border-color: rgba(139, 30, 36, 0.48);
+}
+
+.sins-understanding__line {
+  position: absolute;
+  top: 17%;
+  left: 50%;
+  width: 1px;
+  height: 66%;
+  transform: rotate(31deg);
+  background: linear-gradient(180deg, transparent, rgba(216, 210, 196, 0.48), rgba(139, 30, 36, 0.75), transparent);
+  box-shadow: 0 0 16px rgba(139, 30, 36, 0.24);
+}
+
+.sins-understanding__caption {
+  position: relative;
+  color: var(--dirty-white);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  line-height: 1.8;
+  text-align: center;
+}
+
+.sins-understanding__copy {
+  max-width: 680px;
+}
+
+.sins-understanding__copy h2 {
+  margin-bottom: 1.5rem;
+}
+
+.sins-cycle-section .section-header {
+  margin-bottom: 2rem;
+}
+
+.sins-cycle-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.8rem;
+}
+
+.sins-cycle-card {
+  min-height: 15rem;
+  padding: 1.4rem 1.2rem;
+  border-top: 1px solid rgba(139, 30, 36, 0.65);
+  background: linear-gradient(180deg, rgba(139, 30, 36, 0.08), rgba(11, 11, 11, 0.08) 48%);
+}
+
+.sins-cycle-card > span {
+  color: var(--blood-red);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+}
+
+.sins-cycle-card h3 {
+  margin-top: 2.2rem;
+  font-size: clamp(1.45rem, 2vw, 1.9rem);
+  line-height: 1;
+}
+
+.sins-cycle-card p {
+  margin-top: 0.75rem;
+  font-size: 0.86rem;
+}
+
+.sins-promise {
+  max-width: 690px;
+  margin: 2.3rem auto 0;
+  padding: 1.2rem;
+  border: 1px solid var(--line);
+  background: rgba(0, 0, 0, 0.26);
+  text-align: center;
+}
+
+.sins-promise p {
+  color: var(--dirty-white);
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(1.3rem, 2.5vw, 1.8rem);
+  font-style: italic;
+}
+
+.sins-statement {
+  max-width: 1020px;
+  margin: clamp(3rem, 7vw, 5.5rem) auto 0;
+  color: var(--dirty-white);
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(2.4rem, 6vw, 5.7rem);
+  letter-spacing: 0.015em;
+  line-height: 0.98;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.sins-statement strong {
+  font-weight: 600;
+}
+
+.sins-weight {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  scroll-margin-top: 7rem;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  background:
+    radial-gradient(ellipse at 82% 14%, rgba(139, 30, 36, 0.15), transparent 30%),
+    linear-gradient(135deg, #101010 0%, #0b0b0b 65%, #100c0c 100%);
+}
+
+.sins-weight::before {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  content: "";
+  opacity: 0.36;
+  background: linear-gradient(90deg, transparent 0%, rgba(0, 0, 0, 0.12) 48%, rgba(139, 30, 36, 0.04) 100%);
+  pointer-events: none;
+}
+
+.sins-weight__header {
+  max-width: 760px;
+  margin-bottom: 3rem;
+}
+
+.sins-weight__header h2 {
+  font-size: clamp(2.7rem, 6vw, 5.1rem);
+}
+
+.sins-weight__dek {
+  max-width: 600px;
+  margin-top: 1.2rem;
+  color: var(--dirty-white);
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(1.35rem, 2.4vw, 1.9rem);
+  line-height: 1.25;
+}
+
+.sins-weight__story {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.75fr) minmax(0, 1.25fr);
+  align-items: center;
+  gap: clamp(2.5rem, 8vw, 7rem);
+}
+
+.sins-weight__window {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: min(100%, 340px);
+  aspect-ratio: 0.82;
+  margin: 0 auto;
+  overflow: hidden;
+  border: 1px solid rgba(216, 210, 196, 0.13);
+  background:
+    linear-gradient(180deg, rgba(8, 8, 8, 0.12), rgba(8, 8, 8, 0.92)),
+    linear-gradient(150deg, #111 10%, #211616 56%, #090909 100%);
+  box-shadow: 0 30px 90px rgba(0, 0, 0, 0.52), inset 0 0 60px rgba(0, 0, 0, 0.55);
+}
+
+.sins-weight__window-glow {
+  position: absolute;
+  right: 10%;
+  bottom: 24%;
+  left: 10%;
+  height: 30%;
+  background: radial-gradient(ellipse, rgba(139, 30, 36, 0.3), rgba(139, 30, 36, 0.07) 42%, transparent 72%);
+  filter: blur(14px);
+}
+
+.sins-weight__window-frame {
+  position: absolute;
+  inset: 12% 15% 24%;
+  border: 1px solid rgba(216, 210, 196, 0.22);
+  background:
+    linear-gradient(90deg, transparent 49.6%, rgba(216, 210, 196, 0.2) 50%, transparent 50.4%),
+    linear-gradient(180deg, transparent 49.6%, rgba(216, 210, 196, 0.2) 50%, transparent 50.4%),
+    linear-gradient(180deg, rgba(20, 18, 18, 0.2), rgba(6, 6, 6, 0.82));
+  box-shadow: 0 0 35px rgba(139, 30, 36, 0.12);
+}
+
+.sins-weight__window-sill {
+  position: absolute;
+  right: 10%;
+  bottom: 22%;
+  left: 10%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(216, 210, 196, 0.38), transparent);
+  box-shadow: 0 0 22px rgba(139, 30, 36, 0.18);
+}
+
+.sins-weight__window-caption {
+  position: absolute;
+  bottom: 8%;
+  color: rgba(216, 210, 196, 0.65);
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.24em;
+  line-height: 1.8;
+  text-align: center;
+}
+
+.sins-weight__copy {
+  max-width: 680px;
+}
+
+.sins-weight__copy > p + p {
+  margin-top: 1.35rem;
+}
+
+.sins-weight__lyric {
+  max-width: 860px;
+  margin: clamp(3rem, 7vw, 5.5rem) auto 0;
+  padding: clamp(1.5rem, 5vw, 3.5rem);
+  border-top: 1px solid rgba(139, 30, 36, 0.56);
+  border-bottom: 1px solid var(--line);
+  background: linear-gradient(110deg, rgba(139, 30, 36, 0.075), rgba(10, 10, 10, 0.28) 64%);
+  text-align: center;
+}
+
+.sins-weight__lyric blockquote {
+  margin: 1rem 0 1.2rem;
+  color: var(--dirty-white);
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(2rem, 5vw, 4.5rem);
+  font-weight: 600;
+  line-height: 1.04;
+  text-wrap: balance;
+}
+
+.sins-weight__lyric > p:last-child {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.sins-weight__bridge {
+  max-width: 900px;
+  margin: clamp(3rem, 7vw, 5.5rem) auto 0;
+}
+
+.sins-weight__bridge > .eyebrow {
+  text-align: center;
+}
+
+.sins-weight__bridge-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 1.6rem;
+}
+
+.sins-weight__bridge-grid > div {
+  height: 100%;
+  padding: 1.35rem 1.5rem;
+  border: 1px solid var(--line);
+  background: rgba(8, 8, 8, 0.42);
+}
+
+.sins-weight__bridge-grid > div > span {
+  display: block;
+  margin-bottom: 0.8rem;
+  color: var(--blood-red);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+}
+
+.sins-weight__bridge-grid > div > p {
+  color: var(--dirty-white);
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(1.15rem, 2vw, 1.5rem);
+  line-height: 1.25;
+}
+
+.sins-weight__bridge-mark {
+  color: rgba(216, 210, 196, 0.48);
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 2rem;
+}
+
+.sins-weight__resolve {
+  max-width: 740px;
+  margin: 1.8rem auto 0;
+  color: var(--text-soft);
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+.sins-about {
+  background:
+    radial-gradient(ellipse at 90% 20%, rgba(139, 30, 36, 0.13), transparent 30%),
+    #0b0b0b;
+}
+
+.sins-about__layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(250px, 0.8fr);
+  align-items: start;
+  gap: 1.5rem 4rem;
+  max-width: 1000px;
+}
+
+.sins-about__artist {
+  margin-top: 1rem;
+  color: var(--dirty-white);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+}
+
+.sins-song-details {
+  display: grid;
+  gap: 0;
+  margin: 0;
+  border-top: 1px solid var(--line);
+}
+
+.sins-song-details > div {
+  display: grid;
+  grid-template-columns: 5.5rem 1fr;
+  gap: 0.7rem;
+  padding: 0.9rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.sins-song-details dt {
+  color: var(--blood-red);
+  font-size: 0.64rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+}
+
+.sins-song-details dd {
+  margin: 0;
+  color: var(--dirty-white);
+  font-size: 0.85rem;
+}
+
+.sins-about__closing {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: end;
+  gap: 2rem;
+  margin-top: 1rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--line);
+}
+
+.sins-about__closing > p {
+  max-width: 650px;
+}
+
+.sins-about__closing .inline-link {
+  white-space: nowrap;
+}
+
+@media (max-width: 980px) {
+  .sins-chapters__inner {
+    justify-content: flex-start;
+    overflow-x: auto;
+    scrollbar-width: thin;
+  }
+
+  .sins-cycle-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  .song-story-feature__inner {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .sins-hero {
+    min-height: 39rem;
+    min-height: min(43rem, calc(100svh - 68px));
+    align-items: end;
+  }
+
+  .sins-hero__inner {
+    padding-top: 5rem;
+    padding-bottom: 3.5rem;
+  }
+
+  .sins-hero h1 {
+    font-size: clamp(3rem, 12vw, 5.1rem);
+  }
+
+  .sins-hero__road {
+    top: 0;
+    right: -24%;
+    width: 100%;
+    height: 73%;
+    opacity: 0.52;
+  }
+
+  .sins-hero__road::before {
+    right: 7%;
+    width: 86%;
+    height: 80%;
+  }
+
+  .sins-hero__intro {
+    max-width: 34rem;
+    font-size: 0.9rem;
+  }
+
+  .sins-chapters {
+    top: 68px;
+  }
+
+  .sins-chapters__inner {
+    justify-content: flex-start;
+    gap: 1.2rem;
+    margin-right: 0;
+    padding-top: 0.85rem;
+    padding-bottom: 0.85rem;
+  }
+
+  .sins-chapters__label,
+  .sins-chapters a {
+    font-size: 0.59rem;
+  }
+
+  .sins-story-grid,
+  .sins-understanding__layout,
+  .sins-about__layout {
+    grid-template-columns: 1fr;
+  }
+
+  .sins-weight__header {
+    margin-bottom: 2rem;
+  }
+
+  .sins-weight__story {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .sins-weight__window {
+    width: min(70vw, 260px);
+  }
+
+  .sins-weight__bridge-grid {
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+  }
+
+  .sins-weight__bridge-mark {
+    justify-self: center;
+    line-height: 1;
+  }
+
+  .sins-weight__resolve {
+    text-align: left;
+  }
+
+  .sins-section__heading {
+    position: static;
+    max-width: 34rem;
+  }
+
+  .sins-lyric-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sins-lyric-card,
+  .sins-lyric-card--wide {
+    grid-column: auto;
+    min-height: 0;
+    padding: 1.5rem;
+  }
+
+  .sins-understanding__visual {
+    width: min(70vw, 270px);
+  }
+
+  .sins-cycle-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sins-cycle-card {
+    min-height: 0;
+  }
+
+  .sins-cycle-card h3 {
+    margin-top: 1rem;
+  }
+
+  .sins-about__closing {
+    grid-template-columns: 1fr;
+    align-items: start;
+    gap: 1.3rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sins-chapters a,
+  .sins-lyric-card {
+    transition: none;
+  }
+
+  .sins-lyric-card:hover {
+    transform: none;
+  }
+}
+
+.song-library {
+  scroll-margin-top: 7rem;
+}
+
+.song-library .section-header {
+  max-width: 760px;
+  margin-bottom: 2.5rem;
+}
+
+.song-library__intro {
+  max-width: 600px;
+  margin-top: 1rem;
+}
+
+.song-library__list {
+  display: grid;
+  gap: 1rem;
+}
+
+.song-card {
+  --song-accent: rgba(139, 30, 36, 0.22);
+  position: relative;
+  padding: clamp(1.2rem, 3vw, 2rem);
+  overflow: hidden;
+  scroll-margin-top: 7rem;
+  border: 1px solid var(--line);
+  border-radius: 0.8rem;
+  background:
+    radial-gradient(ellipse at 100% 0%, var(--song-accent), transparent 40%),
+    linear-gradient(115deg, rgba(20, 20, 20, 0.96), rgba(11, 11, 11, 0.96));
+  box-shadow: 0 22px 65px rgba(0, 0, 0, 0.2);
+}
+
+.song-card > * {
+  position: relative;
+  z-index: 1;
+}
+
+.song-card::after {
+  position: absolute;
+  z-index: 0;
+  top: -1rem;
+  right: -1rem;
+  width: min(42%, 17rem);
+  height: 12rem;
+  content: "";
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.song-card--reflection {
+  --song-accent: rgba(111, 82, 89, 0.24);
+}
+
+.song-card--reflection::after {
+  background:
+    linear-gradient(90deg, transparent 24%, rgba(216, 210, 196, 0.12) 25%, transparent 26%, transparent 61%, rgba(216, 210, 196, 0.08) 62%, transparent 63%),
+    radial-gradient(ellipse at 44% 45%, rgba(180, 169, 162, 0.16), transparent 58%);
+  filter: blur(5px);
+  transform: skewY(-8deg);
+}
+
+.song-card--road {
+  --song-accent: rgba(116, 95, 64, 0.2);
+}
+
+.song-card--road::after {
+  background:
+    linear-gradient(78deg, transparent 43%, rgba(216, 210, 196, 0.18) 44%, transparent 45%),
+    linear-gradient(102deg, transparent 55%, rgba(216, 210, 196, 0.13) 56%, transparent 57%),
+    radial-gradient(ellipse at 50% 96%, rgba(216, 210, 196, 0.2), transparent 12%);
+  transform: perspective(12rem) rotateX(28deg);
+  transform-origin: bottom center;
+}
+
+.song-card--dawn {
+  --song-accent: rgba(157, 81, 54, 0.2);
+}
+
+.song-card--dawn::after {
+  top: auto;
+  bottom: 3rem;
+  height: 6rem;
+  background:
+    linear-gradient(0deg, rgba(216, 210, 196, 0.15) 1px, transparent 1px),
+    radial-gradient(ellipse at 50% 100%, rgba(179, 111, 75, 0.28), transparent 62%);
+  background-size: 100% 1.2rem, 100% 100%;
+}
+
+.song-card--fracture {
+  --song-accent: rgba(139, 30, 36, 0.24);
+}
+
+.song-card--fracture::after {
+  background:
+    linear-gradient(132deg, transparent 48%, rgba(216, 210, 196, 0.18) 49%, transparent 50%),
+    linear-gradient(39deg, transparent 48%, rgba(139, 30, 36, 0.32) 49%, transparent 50%),
+    repeating-linear-gradient(152deg, transparent 0 1.35rem, rgba(216, 210, 196, 0.07) 1.4rem, transparent 1.48rem);
+}
+
+.song-card--night-road {
+  --song-accent: rgba(82, 88, 105, 0.24);
+}
+
+.song-card--night-road::after {
+  background:
+    linear-gradient(90deg, transparent 49.5%, rgba(216, 210, 196, 0.18) 50%, transparent 50.5%),
+    linear-gradient(77deg, transparent 48%, rgba(216, 210, 196, 0.1) 49%, transparent 50%),
+    linear-gradient(103deg, transparent 50%, rgba(216, 210, 196, 0.1) 51%, transparent 52%),
+    radial-gradient(ellipse at 50% 100%, rgba(177, 180, 190, 0.2), transparent 64%);
+}
+
+.song-card--horizon {
+  --song-accent: rgba(92, 105, 101, 0.2);
+}
+
+.song-card--horizon::after {
+  top: auto;
+  bottom: 0;
+  height: 7rem;
+  background:
+    linear-gradient(180deg, transparent 46%, rgba(216, 210, 196, 0.2) 47%, transparent 49%),
+    radial-gradient(ellipse at 66% 48%, rgba(216, 210, 196, 0.24), rgba(107, 112, 97, 0.1) 24%, transparent 66%);
+}
+
+.song-card__header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.song-card__number {
+  flex: 0 0 auto;
+  color: var(--blood-red);
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(2rem, 5vw, 3.1rem);
+  line-height: 1;
+}
+
+.song-card__header .eyebrow {
+  margin-bottom: 0.35rem;
+  font-size: 0.63rem;
+}
+
+.song-card__header h3 {
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+}
+
+.song-card__intro {
+  max-width: 760px;
+  margin: 1rem 0 1.2rem;
+}
+
+.music-player {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) minmax(6rem, 9rem);
+  align-items: center;
+  gap: 0.9rem 1rem;
+  padding: 0.9rem;
+  border: 1px solid rgba(216, 210, 196, 0.12);
+  background: rgba(5, 5, 5, 0.58);
+}
+
+.music-player__audio {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  clip-path: inset(50%);
+}
+
+.music-player__toggle {
+  display: grid;
+  width: 2.8rem;
+  height: 2.8rem;
+  place-items: center;
+  padding: 0;
+  border: 1px solid rgba(216, 210, 196, 0.27);
+  border-radius: 50%;
+  color: var(--dirty-white);
+  background: rgba(139, 30, 36, 0.22);
+  transition: transform 180ms ease, background 180ms ease, border-color 180ms ease;
+}
+
+.music-player__toggle:hover:not(:disabled),
+.music-player__toggle:focus-visible:not(:disabled) {
+  transform: scale(1.05);
+  border-color: rgba(139, 30, 36, 0.72);
+  background: rgba(139, 30, 36, 0.42);
+}
+
+.music-player__toggle:disabled {
+  opacity: 0.48;
+}
+
+.music-player__icon {
+  font-size: 0.88rem;
+  line-height: 1;
+}
+
+.music-player__controls {
+  min-width: 0;
+}
+
+.music-player__times {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.3rem;
+  margin-bottom: 0.35rem;
+  color: var(--text-soft);
+  font-variant-numeric: tabular-nums;
+  font-size: 0.68rem;
+}
+
+.music-player__seek,
+.music-player__volume input {
+  width: 100%;
+  margin: 0;
+  accent-color: var(--blood-red);
+  cursor: pointer;
+}
+
+.music-player__seek {
+  display: block;
+  height: 1rem;
+}
+
+.music-player__seek:disabled,
+.music-player__volume input:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.music-player__volume {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  color: var(--text-soft);
+  font-size: 0.59rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
+.music-player__status {
+  grid-column: 1 / -1;
+  min-height: 1rem;
+  color: rgba(216, 210, 196, 0.62);
+  font-size: 0.68rem;
+}
+
+.song-story {
+  margin-top: 1rem;
+  border-top: 1px solid rgba(216, 210, 196, 0.12);
+}
+
+.song-story summary {
+  display: flex;
+  min-height: 3.2rem;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  color: var(--dirty-white);
+  cursor: pointer;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  list-style: none;
+  text-transform: uppercase;
+}
+
+.song-story summary::-webkit-details-marker {
+  display: none;
+}
+
+.song-story summary::marker {
+  content: "";
+}
+
+.song-story__chevron {
+  display: grid;
+  width: 1.8rem;
+  height: 1.8rem;
+  place-items: center;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  color: var(--dirty-white);
+  font-size: 1.1rem;
+  transition: transform 180ms ease;
+}
+
+.song-story[open] .song-story__chevron {
+  transform: rotate(45deg);
+}
+
+.song-story__body {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.4rem;
+  padding: 0.3rem 0 1rem;
+}
+
+.song-story__body section {
+  padding: 0.8rem;
+  border-left: 1px solid rgba(139, 30, 36, 0.5);
+  background: rgba(3, 3, 3, 0.2);
+}
+
+.song-story__body h4 {
+  margin: 0 0 0.55rem;
+  color: var(--dirty-white);
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 1.35rem;
+  font-weight: 600;
+}
+
+.song-story__body p {
+  font-size: 0.85rem;
+}
+
+.song-story__body p + p {
+  margin-top: 0.65rem;
+}
+
+.song-story__body .inline-link {
+  display: inline-block;
+  margin-top: 0.75rem;
+}
+
+.song-card__navigation {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--line);
+}
+
+.song-card__navigation a {
+  color: var(--text-soft);
+  font-size: 0.68rem;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.song-card__navigation a:hover,
+.song-card__navigation a:focus-visible {
+  color: var(--dirty-white);
+}
+
+.sins-related-songs {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem 1.2rem;
+  margin-top: 0.5rem;
+}
+
+.sins-related-songs a {
+  color: var(--text-soft);
+  font-size: 0.7rem;
+  letter-spacing: 0.04em;
+  transition: color 180ms ease;
+}
+
+.sins-related-songs a:hover,
+.sins-related-songs a:focus-visible {
+  color: var(--dirty-white);
+}
+
+.sins-hero__player {
+  width: min(100%, 34rem);
+  margin-top: 1.5rem;
+}
+
+@media (max-width: 980px) {
+  .song-story__body {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 760px) {
+  .music-player {
+    grid-template-columns: auto minmax(0, 1fr);
+    gap: 0.7rem;
+  }
+
+  .music-player__volume {
+    grid-column: 2;
+    width: min(100%, 12rem);
+    justify-self: end;
+  }
+
+  .song-card__navigation {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .sins-related-songs {
+    gap: 0.7rem 1rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .music-player__toggle,
+  .song-story__chevron {
+    transition: none;
+  }
+}
