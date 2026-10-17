@@ -10,6 +10,7 @@ A cinematic, atmospheric artist website for a fictionalized independent musician
 ├── merch.html
 ├── merch-item.html
 ├── the-sins-stop-with-me.html
+├── cant-see-right.html
 ├── music.html
 ├── css/
 │   └── style.css
@@ -21,7 +22,7 @@ A cinematic, atmospheric artist website for a fictionalized independent musician
 │   └── merch.js
 ├── assets/
 │   ├── music/
-│   │   └── (six Sunday Sinner MP3 tracks)
+│   │   └── (seven Sunday Sinner MP3 tracks)
 │   └── images/
 │       └── merch/
 │           └── placeholder.svg
@@ -154,7 +155,7 @@ Place new artwork and gallery images in `assets/images/`.
 
 ## Where to put music
 
-Place song audio files in `assets/music/`. The music page includes six Sunday Sinner tracks with custom playback controls for play, pause, seeking, playback time, and volume. Only one track plays at a time. The song-story page for “The Sins Stop With Me” uses the same player.
+Place song audio files in `assets/music/`. The music page includes Sunday Sinner tracks with custom playback controls for play, pause, seeking, playback time, and volume. Only one track plays at a time. The song-story page for “The Sins Stop With Me” uses the same player.
 
 The player reads MP3 files directly from `assets/music/` and does not require a streaming service or external player.
 

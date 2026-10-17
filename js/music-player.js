@@ -70,12 +70,14 @@
       }
     });
 
-    audio.addEventListener('loadedmetadata', () => {
+    const enableControls = () => {
       toggle.disabled = false;
       seek.disabled = !Number.isFinite(audio.duration) || audio.duration <= 0;
       status.textContent = '';
       updateTimeline();
-    });
+    };
+
+    audio.addEventListener('loadedmetadata', enableControls);
     audio.addEventListener('durationchange', updateTimeline);
     audio.addEventListener('timeupdate', updateTimeline);
     audio.addEventListener('play', () => {
@@ -116,5 +118,6 @@
 
     updatePlaybackState();
     updateTimeline();
+    if (audio.readyState >= HTMLMediaElement.HAVE_METADATA) enableControls();
   });
 })();
